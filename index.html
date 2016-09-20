@@ -2,14 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
+      <title>Try Angular</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
-    <script src='angular.js' charset='utf-8'></script>
-    <title>Try Angular</title>
+    <script src="angular.js" charset='utf-8'></script>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
   </head>
   <body ng-app='myApp'>
-    <h1>Angular stuff</h1>
-    <div ng-controller=''
-
-
+    <h1>What is your favorite fruit?</h1>
+    <div ng-controller='jazzy'>
+      Tell me your favorite fruit plz. <input type="text" ng-model='healthy'>
+    <p>  {{ healthy }} is my favorite fruit! </p>
+  <button ng-click='addFruit()'>Add fruit</button>
   </body>
 </html>
